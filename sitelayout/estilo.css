@@ -1,0 +1,145 @@
+/*Arquivo CSS PETVET */
+
+*{
+   margin: 0px;
+   padding: 0px;
+   }
+   
+body{
+      background:#00000F;
+      font-family: arial;
+	  margin-top: 150px;
+	}  
+/*Inicio do cabecalho */
+#header{
+       width: 800px;
+	   height: 140px;
+	   margin: 0px auto;
+	   background:#F8F8FF;
+	   
+	   }	
+ #header h1{
+	       display: block; /*bloqueia linha*/
+		  float:left;
+		  	   }
+#nav{ 
+		  list-style:none; /*retira marcadores*/
+		  padding-left: 0px;
+		  display: block;
+		  float: left;
+		  margin-left: 130px;	
+		  margin-top:60px;	  
+	     }	
+#nav li {
+	      float:left;
+		  margin-left: 60px;
+		  }
+#nav a {
+	      text-decoration: none;/*retira sublinhado dos links*/
+		  text-transform: uppercase;
+		  padding-top: 8px;
+		  color:#000000;
+		  font-weight: bold;
+		  }		  
+#nav a:hover{
+		 	  border-bottom: 5px solid #FF0000;
+		  }
+
+ul#nav a.ativa{
+		     border-bottom: 5px solid #FF0000;
+		  }
+/*fim do cabecalho */	
+
+ #banner{
+		 margin-top:15px;
+		 width: 800px;
+		 height: 247px;
+		 margin: 0px auto;
+		 position: relative;
+	   }
+ #section{
+		   width:800px;
+		   height:150px;
+		   background:#F0FFF0;
+		   margin:15px auto; /* sem pixel pode ser % ou Em todos */
+		   }	
+.article{
+		   width:250px;
+		   float:left;
+		   margin: 5px, 8px; 
+
+		   }	
+
+.article h1{
+		      font-size: 22px;
+			 font-weight: bold;
+			 text-transform:uppercase;
+			 text-align:center;
+		   }	
+.article p{
+		   padding-top:5px;
+		   font-size: 12px;
+		   text-align:justify;
+		   }  
+
+
+
+ #footer{
+	   width: 800px;
+	   height: 45px;
+	   background:#FF6347;
+	   float:left;
+	   margin:0px auto;
+	   padding-top:25px;
+	   margin-left:560px;
+	   }
+
+
+	   
+	 #footer p{
+	   font-size: 12px;
+	   text-align: center;
+	  }
+
+/*Codificacao da pag Clinica*/			 
+#conteudo{
+	   width:800px;
+	   height:400px;
+	   background:#F0FFF0;
+	   margin:15px auto; 
+	   padding-left:5px;
+	   }	  
+.artigo{
+		   width:350px;
+		   margin:5px 8px;
+		   float:left;
+}
+.artigo p{
+		   padding-top:15px; 
+		   font-size: 17px;
+		   text-align:justify;
+		   }
+/* FIM Codificacao da pagina Clinica*/	
+/*Codificacao da pag servico*/		
+#conteudo1{
+	   width:800px;
+	   height:400px;
+	   background:#F0FFF0;
+	   margin:15px auto; 
+	   padding-left:5px;
+	   }
+.artigo1{
+		   width:350px;
+		   margin:5px 8px;
+		   float:left;
+		   }
+.artigo1  h1{
+	        font-weight:bold;
+		  margin-bottom:5px;
+		  	   }
+.artigo1 ul{
+		   padding-top:15px;
+		   font-size: 17px;
+		   list-style:none; /*retira marcadores*/
+	         padding-left: 0px;
+		   }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Exemplo de Formulario - validação JS</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, inicial-scale=1" />
+	<link rel="icon" type="image/jpg" href="imagens/iconepet.jpg" />
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script language="javascript" type="text/javascript">
+		function validar(){
+			var nome = form1.nome.value;
+			var senha = form1.senha.value;
+            var endereço = form1.endereço.value;
+            var telefone = form1.telefone.value;
+
+			if(nome==""){
+				alert('por favor, preencha o campo com seu nome')
+				form1.nome.focus();
+				return false;}
+			if(senha==""){
+				alert('por favor, preencha o campo com sua senha')
+				form1.senha.focus();
+				return false;}
+
+
+            if(endereço==""){
+				alert('por favor, preencha o campo com seu endereço')
+				form1.endereço.focus();
+				return false;}
+
+                if(telefone==""){
+				alert('por favor, preencha o campo com seu telefone')
+				form1.telefone.focus();
+
+				return false;}
+
+                return true;}
+
+                function processarform() {
+		if(validar()){
+				alert('dados enviados com sucesso')
+				form1.reset();
+			}
+			return false;
+		}
+
+
+	</script>
+</head>
+
+<body>
+	<h1 align="" center">Exemplo e Formulário com Validação em JavaScript</h1>
+	<br><br><br>
+	<br><br><br><br>
+	<form name="form1" onsubmit="return processarform()" method="post">
+		NOME:<input type="text" name="nome" size="30" maxlength="35"><br>
+		SENHA:<input type="password" name="senha" size="8"><br>
+        ENDEREÇO:<input type="text" name="endereço" size="30"><br>
+        TELEFONE:<input type="text"name="telefone" size="20"><br>
+		<input type="submit" value="enviar" onclick="return validar()">
+		<input type="reset" value="limpar">
+      
+	</form>
+
+	<br><br><br>
+	<br><br><br><br>
+	<div id="footer">
+		<p>Rafael Reis 2026 - &copy Todos os direitos reservados<br>Trabalho acadêmico sem fins lucrativos</p>
+	</div>
+	</div>
+</body>
+
+</html>
